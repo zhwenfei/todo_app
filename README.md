@@ -1,4 +1,4 @@
-**Todo List RESTful API with Laravel**
+# Todo List RESTful API with Laravel**
 
 ## Requirements
 
@@ -11,11 +11,14 @@
 ## Setup
 
 - Run db migration:
-    -- php artisan migrate
-
+```
+php artisan migrate
+```
 - Use Laravel Tinker to insert user reocord and generate API token
-    -- $user = User::create(["name"=> "todo_app","email"=>"todo_app@test.com","password"=>bcrypt("123456")]);
-    -- $user->createToken('test_token');
+```
+$user = User::create(["name"=> "todo_app","email"=>"todo_app@test.com","password"=>bcrypt("123456")]);
+$user->createToken('test_token');
+```
 
 - Copy plainTextToken from the above createToken output, whcih would should be included in the Authorization header as a Bearer token for API client
 
