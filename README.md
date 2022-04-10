@@ -17,6 +17,8 @@ php artisan migrate
 - Use Laravel Tinker to insert user reocord and generate API token
 ```
 $user = User::create(["name"=> "todo_app","email"=>"todo_app@test.com","password"=>bcrypt("123456")]);
+```
+```
 $user->createToken('test_token');
 ```
 
